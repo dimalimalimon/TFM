@@ -46,7 +46,8 @@ class XML_preprocessor(object):
                 bounding_box = [xmin,ymin,xmax,ymax]
                 bounding_boxes.append(bounding_box)
                 class_name = object_tree.find('name').text
-                print(class_name)
+                class_name=class_name.upper()
+                #print(class_name)
                 one_hot_class = self._to_one_hot(class_name)
                 one_hot_classes.append(one_hot_class)
             # image_name = root.find('filename').text
@@ -59,7 +60,7 @@ class XML_preprocessor(object):
 
     def _to_one_hot(self, name):
         one_hot_vector = [0] * self.num_classes
-        if name == 'A':
+        if name == 'A' or name == 'a':
             one_hot_vector[0] = 1
         elif name == 'B':
             one_hot_vector[1] = 1

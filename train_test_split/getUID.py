@@ -21,6 +21,7 @@ def getUID_path(path):
             dicom_list.sort()
 
             for dicom in dicom_list:
+                #print(dicom)
                 dicom_path = os.path.join(series_path, dicom)
                 info = loadFileInformation(dicom_path)
                 dict[info['dicom_num']] = (dicom_path, dicom)
