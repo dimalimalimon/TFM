@@ -1,0 +1,163 @@
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.197331637586777629846830415089.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.123711118494376991004658396867.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.977843549798171614165444565171.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.104844118512019681581778982217.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.178691335667145325266760179393.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.309482023003839603563117496477.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.108589731105910062263290540580.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.938614404328172740937065630777.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.246985688279533316508286182745.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.498159898056511787856133477967.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.320155693317444489490158341436.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.273984870181876635608375104016.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.103277472081784881859995118959.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.310007605688603553738087564179.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.546883019604555310769253277246.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.100849384633138151404753252940.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.291105582773336122585956767503.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.282443540195019952391337894780.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.168706845459854126623466937690.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.124551158968893888898507643620.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.198157163958153481207202222734.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.562678256393707137253801991352.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.351926153275964865658406212028.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.193122766390794431596200815807.xml
+missing annotation file:  1.3.6.1.4.1.14519.5.2.1.6655.2359.157730136723047062067922011255.xml
+Number of images: 2285
+(2285,)
+(2285,)
+Epoch 1, loss: 2377.020
+Epoch 2, loss: 1193.741
+Epoch 3, loss: 804.222
+Epoch 4, loss: 554.011
+Epoch 5, loss: 389.423
+Epoch 6, loss: 300.391
+Epoch 7, loss: 239.887
+Epoch 8, loss: 192.796
+Epoch 9, loss: 169.099
+Epoch 10, loss: 146.869
+Epoch 11, loss: 140.016
+Epoch 12, loss: 115.945
+Epoch 13, loss: 105.771
+Epoch 14, loss: 96.232
+Epoch 15, loss: 86.973
+Epoch 16, loss: 81.345
+Epoch 17, loss: 74.340
+Epoch 18, loss: 70.715
+Epoch 19, loss: 64.260
+Epoch 20, loss: 60.604
+Epoch 21, loss: 60.405
+Epoch 22, loss: 56.250
+Epoch 23, loss: 53.046
+Epoch 24, loss: 49.843
+Epoch 25, loss: 47.904
+Epoch 26, loss: 44.716
+Epoch 27, loss: 45.895
+Epoch 28, loss: 40.742
+Epoch 29, loss: 39.019
+Epoch 30, loss: 41.511
+Epoch 31, loss: 38.959
+Epoch 32, loss: 40.715
+Epoch 33, loss: 43.120
+Epoch 34, loss: 38.566
+Epoch 35, loss: 37.532
+Epoch 36, loss: 32.192
+Epoch 37, loss: 33.179
+Epoch 38, loss: 31.848
+Epoch 39, loss: 28.483
+Epoch 40, loss: 27.567
+Epoch 41, loss: 27.238
+Epoch 42, loss: 30.643
+Epoch 43, loss: 27.152
+Epoch 44, loss: 25.732
+Epoch 45, loss: 27.160
+Epoch 46, loss: 24.528
+Epoch 47, loss: 24.676
+Epoch 48, loss: 25.897
+Epoch 49, loss: 25.113
+Epoch 50, loss: 23.340
+Epoch 51, loss: 24.306
+Epoch 52, loss: 22.513
+Epoch 53, loss: 24.882
+Epoch 54, loss: 21.613
+Epoch 55, loss: 22.322
+Epoch 56, loss: 19.938
+Epoch 57, loss: 21.895
+Epoch 58, loss: 18.760
+Epoch 59, loss: 21.891
+Epoch 60, loss: 21.132
+Epoch 61, loss: 19.033
+Epoch 62, loss: 20.938
+Epoch 63, loss: 20.505
+Epoch 64, loss: 19.166
+Epoch 65, loss: 19.494
+Epoch 66, loss: 17.295
+Epoch 67, loss: 18.896
+Epoch 68, loss: 18.938
+Epoch 69, loss: 20.099
+Epoch 70, loss: 17.437
+Epoch 71, loss: 17.166
+Epoch 72, loss: 21.381
+Epoch 73, loss: 16.326
+Epoch 74, loss: 15.744
+Epoch 75, loss: 15.381
+Epoch 76, loss: 17.726
+Epoch 77, loss: 16.278
+Epoch 78, loss: 15.943
+Epoch 79, loss: 17.807
+Epoch 80, loss: 16.105
+Epoch 81, loss: 15.636
+Epoch 82, loss: 14.648
+Epoch 83, loss: 14.317
+Epoch 84, loss: 16.718
+Epoch 85, loss: 13.714
+Epoch 86, loss: 13.698
+Epoch 87, loss: 14.214
+Epoch 88, loss: 14.573
+Epoch 89, loss: 12.903
+Epoch 90, loss: 14.098
+Epoch 91, loss: 13.276
+Epoch 92, loss: 14.266
+Epoch 93, loss: 14.131
+Epoch 94, loss: 13.798
+Epoch 95, loss: 14.540
+Epoch 96, loss: 12.349
+Epoch 97, loss: 10.789
+Epoch 98, loss: 13.024
+Epoch 99, loss: 13.234
+Epoch 100, loss: 12.634
+Test loss: 4.612
+Test loss: 10.015
+Test loss: 4.830
+Test loss: 9.206
+Test loss: 2.609
+Test loss: 2.874
+Test loss: 4.071
+Test loss: 3.713
+Test loss: 4.317
+Test loss: 2.164
+Test loss: 4.605
+Test loss: 2.820
+Test loss: 1.665
+Total iou entire dataset: 0.7718575030223717
+Total iou test: 0.7341357300363096
+0
+saved:  G_0.png
+1
+saved:  G_1.png
+2
+saved:  G_2.png
+3
+saved:  G_3.png
+4
+saved:  G_4.png
+5
+saved:  G_5.png
+6
+saved:  G_6.png
+7
+saved:  G_7.png
+8
+saved:  G_8.png
+9
+saved:  G_9.png

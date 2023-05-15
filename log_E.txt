@@ -1,26 +1,114 @@
-123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201(201,)
+Number of images: 201
 (201,)
-Test loss: 191.936
-Test loss: 193.115
-Test loss: 165.382
-Test loss: 198.951
-Test loss: 166.445
-Test loss: 241.128
-Test loss: 145.530
-Test loss: 207.097
-Test loss: 287.593
-Test loss: 252.708
-Test loss: 214.295
-Test loss: 185.772
-Test loss: 198.094
-Total iou: 0.1714923540845619
+(201,)
+Epoch 1, loss: 1459.655
+Epoch 2, loss: 792.467
+Epoch 3, loss: 604.684
+Epoch 4, loss: 455.541
+Epoch 5, loss: 369.843
+Epoch 6, loss: 321.561
+Epoch 7, loss: 276.773
+Epoch 8, loss: 253.429
+Epoch 9, loss: 222.586
+Epoch 10, loss: 198.064
+Epoch 11, loss: 165.569
+Epoch 12, loss: 143.488
+Epoch 13, loss: 129.246
+Epoch 14, loss: 115.775
+Epoch 15, loss: 112.047
+Epoch 16, loss: 104.875
+Epoch 17, loss: 91.818
+Epoch 18, loss: 91.761
+Epoch 19, loss: 80.130
+Epoch 20, loss: 79.103
+Epoch 21, loss: 76.564
+Epoch 22, loss: 71.285
+Epoch 23, loss: 65.578
+Epoch 24, loss: 67.080
+Epoch 25, loss: 64.004
+Epoch 26, loss: 64.152
+Epoch 27, loss: 58.843
+Epoch 28, loss: 57.367
+Epoch 29, loss: 54.765
+Epoch 30, loss: 53.833
+Epoch 31, loss: 50.249
+Epoch 32, loss: 51.498
+Epoch 33, loss: 49.984
+Epoch 34, loss: 53.413
+Epoch 35, loss: 46.539
+Epoch 36, loss: 44.353
+Epoch 37, loss: 44.888
+Epoch 38, loss: 44.118
+Epoch 39, loss: 41.850
+Epoch 40, loss: 42.281
+Epoch 41, loss: 42.580
+Epoch 42, loss: 43.537
+Epoch 43, loss: 46.563
+Epoch 44, loss: 39.666
+Epoch 45, loss: 38.313
+Epoch 46, loss: 37.150
+Epoch 47, loss: 35.057
+Epoch 48, loss: 35.510
+Epoch 49, loss: 34.877
+Epoch 50, loss: 35.649
+Epoch 51, loss: 34.902
+Epoch 52, loss: 35.457
+Epoch 53, loss: 36.218
+Epoch 54, loss: 32.348
+Epoch 55, loss: 31.249
+Epoch 56, loss: 31.961
+Epoch 57, loss: 31.888
+Epoch 58, loss: 30.868
+Epoch 59, loss: 31.707
+Epoch 60, loss: 30.242
+Epoch 61, loss: 31.299
+Epoch 62, loss: 28.917
+Epoch 63, loss: 28.728
+Epoch 64, loss: 30.546
+Epoch 65, loss: 30.073
+Epoch 66, loss: 28.326
+Epoch 67, loss: 25.989
+Epoch 68, loss: 26.443
+Epoch 69, loss: 27.064
+Epoch 70, loss: 25.930
+Epoch 71, loss: 25.582
+Epoch 72, loss: 24.303
+Epoch 73, loss: 25.068
+Epoch 74, loss: 24.654
+Epoch 75, loss: 25.051
+Epoch 76, loss: 26.204
+Epoch 77, loss: 24.961
+Epoch 78, loss: 25.625
+Epoch 79, loss: 23.446
+Epoch 80, loss: 23.852
+Epoch 81, loss: 22.214
+Epoch 82, loss: 21.734
+Epoch 83, loss: 21.456
+Epoch 84, loss: 20.763
+Epoch 85, loss: 25.218
+Epoch 86, loss: 24.205
+Epoch 87, loss: 22.926
+Epoch 88, loss: 21.082
+Epoch 89, loss: 23.018
+Epoch 90, loss: 23.003
+Epoch 91, loss: 22.484
+Epoch 92, loss: 20.171
+Epoch 93, loss: 23.264
+Epoch 94, loss: 21.363
+Epoch 95, loss: 20.732
+Epoch 96, loss: 20.028
+Epoch 97, loss: 20.288
+Epoch 98, loss: 19.452
+Epoch 99, loss: 20.076
+Epoch 100, loss: 18.290
+Test loss: 30.947
+Test loss: 23.722
+Test loss: 26.991
+Total iou entire dataset: 0.809604770515276
+Total iou test: 0.7378583760335937
 0
+saved:  E_0.png
 1
+saved:  E_1.png
 2
-3
-4
-5
-6
-7
-8
-9
+saved:  E_2.png

@@ -100,9 +100,9 @@ for subject_name in annon_files:
         #get xmin, ymin, xmax, ymax that define the square and will be predicted
             y_all.append(torch.tensor(np.array([image_data[0], image_data[1], image_data[2], image_data[3]])))
             count+=1
-            print(count,end="\r")
+            #print(count,end="\r")
 
-            
+print("Number of images:", count)
 x_all = np.array(x_all)
 y_all = np.array(y_all)
 print(x_all.shape)
@@ -116,20 +116,50 @@ if subtype!="E":
     x_all=x_all[sampled_index]
     y_all=y_all[sampled_index]
 
-E_dataset = DICOMDataset(x_all, y_all)
+
+
+custom_dataset = DICOMDataset(x_all, y_all)
 
 # Create dataloaders for train and test sets
-E_loader = DataLoader(E_dataset, batch_size=16, shuffle=True)
+train_size = int(0.8 * len(custom_dataset))
+test_size = len(custom_dataset) - train_size
+train_dataset, test_dataset = torch.utils.data.random_split(custom_dataset, [train_size, test_size])
+
+# Create dataloaders for train and test sets
+train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=16, shuffle=True)
+
+#fine tune for 100epochs
+
+num_epochs=100
+# Train model
+for epoch in range(num_epochs):
+    running_loss = 0.0
+    for i, data in enumerate(train_loader, 0):
+        inputs, labels = data
+        optimizer.zero_grad()
+        inputs=torch.permute(inputs,(0,3,1,2))
+        inputs=inputs.float()
+        outputs = model(inputs)
+        labels=labels.float()
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+        running_loss += loss.item()
+    print('Epoch %d, loss: %.3f' % (epoch + 1, running_loss / len(train_loader)))
+
+torch.save(model,"./weights/"+subtype+"_B_"+str(num_epochs)+"_trained.pth")
+
 
 #first check loss of other cancer type
 with torch.no_grad():
-    for data in E_loader:
+    for data in test_loader:
         inputs, labels = data
         inputs=torch.permute(inputs,(0,3,1,2))
         inputs=inputs.float()
         outputs = model(inputs)
         loss = criterion(outputs, labels)
-        print('Test loss: %.3f' % (loss / len(E_loader)))
+        print('Test loss: %.3f' % (loss / len(test_loader)))
 
 def bb_intersection_over_union(boxA, boxB):
     # determine the (x, y)-coordinates of the intersection rectangle
@@ -151,26 +181,34 @@ def bb_intersection_over_union(boxA, boxB):
     return iou
 
 import torchvision.ops.boxes as bops
-total_error=0
-d=1
-for i,data in enumerate(E_loader):
-    #print(data[1].shape)
-    for j in range(data[1].shape[0]):
-        #print(data[0][j].shape)
-        inputs=torch.permute(data[0][j],(2,0,1))
-        inputs=inputs.float()
-        outputs = model(inputs).detach().numpy()[0]
-        outputs=outputs.astype(int)
-        #print(data[1][j])
-        error=bb_intersection_over_union(data[1][j].detach().numpy(),outputs)
-        #print(i,data[1][j],outputs,error)
-        total_error+=error
-        d+=1
-total_error=total_error/d
-print("Total iou:",total_error)
+
+def compute_iou(E_loader):
+    total_error=0
+    d=0
+    for i,data in enumerate(E_loader):
+        #print(data[1].shape)
+        for j in range(data[1].shape[0]):
+            #print(data[0][j].shape)
+            inputs=torch.permute(data[0][j],(2,0,1))
+            inputs=inputs.float()
+            outputs = model(inputs).detach().numpy()[0]
+            outputs=outputs.astype(int)
+            #print(data[1][j])
+            error=bb_intersection_over_union(data[1][j].detach().numpy(),outputs)
+            #print(i,data[1][j],outputs,error)
+            total_error+=error
+            d+=1
+    return(total_error/d)
+
+#total_error=total_error/d
+iou_tot=compute_iou(train_loader)
+test_iou=compute_iou(test_loader)
+print("Total iou entire dataset:",(iou_tot+test_iou)/2)
+print("Total iou test:",test_iou)
+
 
 #visualize predictions 
-for i,data in enumerate(E_loader):
+for i,data in enumerate(test_loader):
     if i==10:
         break
     else:
@@ -205,4 +243,5 @@ for i,data in enumerate(E_loader):
         axes[1][1].set_title('Sobel Filtered Image')
         fig.delaxes(axes[-1][-1])
         plt.savefig("./plots/transfer/"+subtype+"_"+str(i)+".png")
+        print("saved: ",subtype+"_"+str(i)+".png")
         
